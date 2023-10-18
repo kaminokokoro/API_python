@@ -8,7 +8,7 @@ def get_nhanvien(MaNV):
         result = cursor.fetchall()
         return  result
     except:
-        return  "Error"
+        return  Exception
 
 def insert_nhanvien(MaNV,Ten,Luong):
     try:
@@ -16,7 +16,7 @@ def insert_nhanvien(MaNV,Ten,Luong):
         db.commit()
         return "Insert success"
     except:
-        return "Insert error"
+        return Exception
 
 def update_nhanvien(MaNV,Ten,Luong):
     try:
@@ -24,13 +24,13 @@ def update_nhanvien(MaNV,Ten,Luong):
         db.commit()
         return "Update success"
     except:
-        return "Update error"
-
+        return Exception
+    
 def delete_nhanvien(MaNV):
     try:
         cursor.execute("DELETE FROM nhanvien WHERE MaNV = '"+MaNV+"'")
         db.commit()
         return "Delete success"
     except:
-        return "Delete error"
+        return Exception
 

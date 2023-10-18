@@ -8,8 +8,8 @@ def get_chungnhan(MaNV):
             cursor.execute("SELECT * FROM chungnhan WHERE MaNV = '"+MaNV+"'")
         result = cursor.fetchall()
         return  result
-    except:
-        return  "Error"
+    except Exception as e:
+        return e
 
 def insert_chungnhan(MaNV,MaMB):
     try:
@@ -17,7 +17,7 @@ def insert_chungnhan(MaNV,MaMB):
         db.commit()
         return "Insert success"
     except:
-        return "Insert error"
+        return Exception
 
 def update_chungnhan(MaNV,MaMB):
     try:
@@ -25,7 +25,7 @@ def update_chungnhan(MaNV,MaMB):
         db.commit()
         return "Update success"
     except:
-        return "Update error"
+        return Exception
 
 def delete_chungnhan(MaNV):
     try:
@@ -33,4 +33,4 @@ def delete_chungnhan(MaNV):
         db.commit()
         return "Delete success"
     except:
-        return "Delete error"
+        return Exception

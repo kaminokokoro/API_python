@@ -10,7 +10,7 @@ def get_chuyenbay(MaCB):
         result = cursor.fetchall()
         return  result
     except:
-        return  "Error"
+        return  Exception
     
 def insert_chuyenbay(MaCB,GaDi,GaDen,DoDai,GioDi,GioDen,ChiPhi):
     try:
@@ -18,7 +18,7 @@ def insert_chuyenbay(MaCB,GaDi,GaDen,DoDai,GioDi,GioDen,ChiPhi):
         db.commit()
         return "Insert success"
     except:
-        return "Insert error"
+        return Exception
 
 def update_chuyenbay(MaCB,GaDi,GaDen,DoDai,GioDi,GioDen,ChiPhi):
     try:
@@ -26,7 +26,7 @@ def update_chuyenbay(MaCB,GaDi,GaDen,DoDai,GioDi,GioDen,ChiPhi):
         db.commit()
         return "Update success"
     except:
-        return "Update error"
+        return Exception
     
 def delete_chuyenbay(MaCB):
     try:
@@ -34,4 +34,4 @@ def delete_chuyenbay(MaCB):
         db.commit()
         return "Delete success"
     except:
-        return "Delete error"
+        return Exception

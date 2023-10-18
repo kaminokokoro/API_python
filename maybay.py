@@ -8,7 +8,7 @@ def get_maybay(MaMB):
         result = cursor.fetchall()
         return  result
     except:
-        return  "Error"
+        return  Exception
     
 def insert_maybay(MaMB,Loai,TamBay):
     try:
@@ -16,7 +16,7 @@ def insert_maybay(MaMB,Loai,TamBay):
         db.commit()
         return "Insert success"
     except:
-        return "Insert error"
+        return Exception
     
 def update_maybay(MaMB,Loai,TamBay):
     try:
@@ -24,7 +24,7 @@ def update_maybay(MaMB,Loai,TamBay):
         db.commit()
         return "Update success"
     except:
-        return "Update error"
+        return Exception
     
 def delete_maybay(MaMB):
     try:
@@ -32,4 +32,4 @@ def delete_maybay(MaMB):
         db.commit()
         return "Delete success"
     except:
-        return "Delete error"
+        return Exception
