@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "c6e3bea0-60c8-48c8-9349-e57b7ee98f15",
+		"name": "APIHangKhong",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30529489",
+		"_collection_link": "https://www.postman.com/spaceflight-astronomer-83478470/workspace/public/collection/30529489-c6e3bea0-60c8-48c8-9349-e57b7ee98f15?action=share&source=collection_link&creator=30529489"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/maybay",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/maybay?MaMB&Loai&TamBay",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"maybay"
+					],
+					"query": [
+						{
+							"key": "MaMB",
+							"value": null
+						},
+						{
+							"key": "Loai",
+							"value": null
+						},
+						{
+							"key": "TamBay",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/nhanvien?MaNV&Ten&Luong",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/nhanvien?MaNV&Ten&Luong",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"nhanvien"
+					],
+					"query": [
+						{
+							"key": "MaNV",
+							"value": null
+						},
+						{
+							"key": "Ten",
+							"value": null
+						},
+						{
+							"key": "Luong",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/chungnhan?MaNV&MaMB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/chungnhan?MaNV&MaMB",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chungnhan"
+					],
+					"query": [
+						{
+							"key": "MaNV",
+							"value": null
+						},
+						{
+							"key": "MaMB",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/chuyenbay?MaCB=a1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chuyenbay?MaCB=a6&GaDi=HaNoi&GaDen=DaNang&DoDai=675&GioDi=8:00:00&GioDen=10:00:00&ChiPhi=2000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chuyenbay"
+					],
+					"query": [
+						{
+							"key": "MaCB",
+							"value": "a6"
+						},
+						{
+							"key": "GaDi",
+							"value": "HaNoi"
+						},
+						{
+							"key": "GaDen",
+							"value": "DaNang"
+						},
+						{
+							"key": "DoDai",
+							"value": "675"
+						},
+						{
+							"key": "GioDi",
+							"value": "8:00:00"
+						},
+						{
+							"key": "GioDen",
+							"value": "10:00:00"
+						},
+						{
+							"key": "ChiPhi",
+							"value": "2000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
