@@ -5,7 +5,14 @@ def get_nhanvien(MaNV):
             cursor.execute("SELECT * FROM nhanvien")
         else:
             cursor.execute("SELECT * FROM nhanvien WHERE MaNV = '"+MaNV+"'")
-        result = cursor.fetchall()
+        data = cursor.fetchall()
+        result = {'nhanvien':[]}
+        for d in data:
+            result["nhanvien"].append({
+                "MaNV":d[0],
+                "Ten":d[1],
+                "Luong":d[2]
+            })
         return  result
     except:
         return  Exception

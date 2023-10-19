@@ -7,7 +7,18 @@ def get_chuyenbay(MaCB):
             cursor.execute("SELECT * FROM chuyenbay")
         else:
             cursor.execute("SELECT * FROM chuyenbay WHERE MaCB = '"+MaCB+"'")
-        result = cursor.fetchall()
+        data = cursor.fetchall()
+        result ={'chuyenbay':[]}
+        for d in data:
+            result['chuyenbay'].append({
+                "MaCB":d[0],
+                "GaDi":d[1],
+                "GaDen":d[2],
+                "DoDai":d[3],
+                "GioDi":d[4],
+                "GioDen":d[5],
+                "ChiPhi":d[6]
+            })
         return  result
     except:
         return  Exception

@@ -6,7 +6,13 @@ def get_chungnhan(MaNV):
             cursor.execute("SELECT * FROM chungnhan")
         else:
             cursor.execute("SELECT * FROM chungnhan WHERE MaNV = '"+MaNV+"'")
-        result = cursor.fetchall()
+        data = cursor.fetchall()
+        result = {'chungnhan':[]}
+        for d in data:
+            result["chungnhan"].append({
+                "MaNV":d[0],
+                "MaMB":d[1]
+            })
         return  result
     except Exception as e:
         return e

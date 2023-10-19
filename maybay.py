@@ -5,7 +5,14 @@ def get_maybay(MaMB):
             cursor.execute("SELECT * FROM maybay")
         else:
             cursor.execute("SELECT * FROM maybay WHERE MaMB = '"+MaMB+"'")
-        result = cursor.fetchall()
+        data = cursor.fetchall()
+        result ={'maybay':[]}
+        for d in data:
+            result['maybay'].append({
+                "MaMB":d[0],
+                "Loai":d[1],
+                "TamBay":d[2]
+            })
         return  result
     except:
         return  Exception
