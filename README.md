@@ -13,7 +13,7 @@ This API provides access and manipulation to the aviation database.
 - `nhanvien` : this table stores data about the staff
 - `chungnhan` : this table stores data about the certification of staff
 ## how to run code
-- step 1: Dowload code [here]() or clone this repo by git:
+- step 1: Dowload code [here](https://github.com/kaminokokoro/API_python/releases/tag/v1.0.0) or clone this repo by git:
 ```
 git clone https://github.com/kaminokokoro/API_python.git
 ```
