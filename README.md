@@ -1,8 +1,17 @@
 # API_python
-chưa xong hết đâu
+## Overview
+This API provides access and manipulation to the aviation database.
+## API COLLECTION POSTMAN
+[AVIATION API](https://github.com/kaminokokoro/API_python/blob/master/AVIATION%20API.postman_collection.json)
 ## API documentation
-This is in developing
 [API documentation](https://documenter.getpostman.com/view/30529489/2s9YRB1BZq)
+## Aviation Database
+[Aviation database](https://github.com/kaminokokoro/API_python/tree/master/database_to_import)
+### This database includes:
+- `chuyenbay` : this table stores data about information of flight
+- `maybay` : this table stores data about the plane
+- `nhanvien` : this table stores data about the staff
+- `chungnhan` : this table stores data about the certification of staff
 ## how to run code
 - step 1: Dowload code [here]() or clone this repo by git:
 ```
